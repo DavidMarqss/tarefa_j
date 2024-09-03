@@ -1,0 +1,10 @@
+@baseUrl = https://8080-davidmarqss-tarefaj-qn73ndp808o.ws-us116.gitpod.io
+
+###
+POST {{baseUrl}}/auth
+Content-Type: application/json
+
+{
+    "nomeUser": "admin",
+    "senha": "admin"
+}

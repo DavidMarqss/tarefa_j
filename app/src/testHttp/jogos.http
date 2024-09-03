@@ -1,0 +1,29 @@
+@baseUrl = https://8080-davidmarqss-tarefaj-qn73ndp808o.ws-us116.gitpod.io
+
+###
+GET {{baseUrl}}/jogos
+
+###
+POST {{baseUrl}}/jogos
+Content-Type: application/json
+
+{
+    "nomeJogo": "Crash Its About Time",
+    "horasJogadas": 10,
+    "concluido": true
+}
+
+###
+GET {{baseUrl}}/jogos/41
+###
+PUT {{baseUrl}}/jogos/1
+Content-Type: application/json
+
+{
+    "nomeJogo": "Crash Its About Time",
+    "horasJogadas": 10,
+    "concluido": true
+}
+
+###
+DELETE {{baseUrl}}/jogos/1
