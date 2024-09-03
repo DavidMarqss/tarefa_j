@@ -1,0 +1,14 @@
+image: gitpod/workspace-java-17
+
+tasks:
+  - init: "docker-compose up -d"
+
+vscode:
+    extensions:
+      - vscjava.vscode-java-pack
+      - humao.rest-client
+      - vscjava.vscode-gradle
+
+ports:
+  - port: 8080
+    visibility: public
