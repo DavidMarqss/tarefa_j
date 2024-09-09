@@ -1,4 +1,4 @@
-@baseUrl = https://8080-davidmarqss-tarefaj-qn73ndp808o.ws-us116.gitpod.io
+@baseUrl = https://8080-davidmarqss-tarefaj-sbysnkcttgj.ws-us116.gitpod.io
 
 ###
 POST {{baseUrl}}/auth

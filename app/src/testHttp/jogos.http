@@ -1,10 +1,13 @@
-@baseUrl = https://8080-davidmarqss-tarefaj-qn73ndp808o.ws-us116.gitpod.io
+@baseUrl = https://8080-davidmarqss-tarefaj-sbysnkcttgj.ws-us116.gitpod.io
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJMaXN0YSBKb2dvcyIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzI1OTE5NTM1fQ.B1AVzPv-ttAKYo7yhfzzI23MoXsdqqUw6sFUTIJIU2I
 
 ###
 GET {{baseUrl}}/jogos
+Authorization: Bearer {{token}}
 
 ###
 POST {{baseUrl}}/jogos
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -14,16 +17,30 @@ Content-Type: application/json
 }
 
 ###
-GET {{baseUrl}}/jogos/41
+POST {{baseUrl}}/jogos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nomeJogo": "Dead Cel",
+    "horasJogadas": 70,
+    "concluido": true
+}
+
+###
+GET {{baseUrl}}/jogos/2
+Authorization: Bearer {{token}}
 ###
 PUT {{baseUrl}}/jogos/1
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
     "nomeJogo": "Crash Its About Time",
-    "horasJogadas": 10,
+    "horasJogadas": 14,
     "concluido": true
 }
 
 ###
-DELETE {{baseUrl}}/jogos/1
+DELETE {{baseUrl}}/jogos/3
+Authorization: Bearer {{token}}
